@@ -56,9 +56,9 @@ const burger = {
   category: "Lunch", 
   discount: function(string){
     if (string === 'teacher' || string === 'student'){
-      discPrice = this.price - this.price * 0.25;
+      return this.price - (this.price * 0.25);
     }else {
-      discPrice = this.price - this.price * 0.10;
+      return this.price - (this.price * 0.10);
     }
     return discPrice;
   }
@@ -83,7 +83,7 @@ Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
 
-
+console.log('Reviews:', reviews[5]);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 (not auto-tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Reyna's feedback is missing! Use what you know to do the following: (no function needed) 
