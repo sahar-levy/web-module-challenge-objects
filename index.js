@@ -60,7 +60,6 @@ const burger = {
     }else {
       return this.price - (this.price * 0.10);
     }
-    return discPrice;
   }
 }
 console.log('task 3:', burger.discount('public'));
